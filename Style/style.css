@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-fundo-principal: #F8F9FA;
+    --cor-fundo-secundario: #929AAB;
+    --cor-fonte-principal: #1e2125;
+    --cor-fonte-secundaria: #F7F7F7;
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    box-sizing: border-box;
+}
+
+.cabecalho { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 15%;
+    border-bottom: 1px solid #E0E0E0;
+    font-family: "Inter";
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 24px;
+}
+
+.cabecalho_menu_link {
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+    justify-content: space-between;
+}
+
+.cabecalho_menu_titulo {
+    color: var(--cor-fonte-principal);
+}

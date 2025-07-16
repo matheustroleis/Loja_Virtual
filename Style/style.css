@@ -6,8 +6,8 @@
 }
 
 :root {
-    --cor-fundo-principal: #F8F9FA;
-    --cor-fundo-secundario: #929AAB;
+    --cor-fundo-principal: #f1f1f1;
+    --cor-fundo-secundario: #D7D7D7;
     --cor-fonte-principal: #1e2125;
     --cor-fonte-secundaria: #F7F7F7;
 }
@@ -15,6 +15,7 @@
 body {
     background-color: var(--cor-fundo-principal);
     box-sizing: border-box;
+    font-family: "Inter";
 }
 
 .cabecalho { 
@@ -22,8 +23,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 15%;
-    border-bottom: 1px solid #E0E0E0;
-    font-family: "Inter";
 }
 
 .cabecalho_menu{
@@ -39,4 +38,41 @@ body {
 
 .cabecalho_menu_titulo {
     color: var(--cor-fonte-principal);
+}
+
+.banner {
+    color: var(--cor-fonte-secundaria);
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner_titulo {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.main_titulo {
+    padding: 16px 15%;
+    font-size: 28px; 
+}
+
+.produtos_container {
+ 
+}
+
+.produto_card {
+
+}
+
+.produto_card_imagem {
+
+}
+
+.produto_card_titulo {
+
+}
+
+.produto_card_preco {
+    
 }

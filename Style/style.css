@@ -23,6 +23,10 @@ body {
     height: 100vh;
 }
 
+main {
+    flex-grow: 1; 
+}
+
 
 .cabecalho { 
     display: flex;
@@ -116,19 +120,23 @@ body {
 }
 
 .apresentacao {
-    margin: 6.8% 10%;
+    margin: 7% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5%;
 }
 
 .descricao_imagem_card {
-    width: 80%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .descricao {
-    width: 950px;
+    flex: 1;
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 30px; 
@@ -162,6 +170,31 @@ body {
     padding: 20px 24px;
     border-radius: 5px;
     font-weight: 700;
+}
+
+.conteudo-simples {
+    text-align: center; 
+    padding: 150px 0;   
+}
+
+.conteudo-simples__titulo {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.conteudo-simples__botao {
+    font-size: 18px;
+    color: var(--cor-fonte-principal);
+    text-decoration: none;
+    border: 2px solid var(--cor-fonte-principal); 
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 

@@ -83,12 +83,20 @@ main {
     text-align: center;
 }
 
+.produto_card:hover {
+    background-color: var(--cor-fundo-secundario);
+}
+
 .produto_card_imagem {
     width: 50%;
     height: 180px;
     margin-bottom: 12px;
     object-fit: cover;
     /* Evita que a imagem se distorça */
+}
+
+.produto_card_imagem:hover {
+    background-color: var(--cor-fundo-secundario);
 }
 
 .produto_card_titulo {
@@ -171,6 +179,10 @@ main {
     padding: 20px 24px;
     border-radius: 5px;
     font-weight: 700;
+}
+
+.descricao_link:hover {
+    background-color: var(--cor-fundo-secundario);
 }
 
 .conteudo-simples {

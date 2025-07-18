@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -24,18 +24,18 @@ body {
 }
 
 main {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 
-.cabecalho { 
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 13%;
 }
 
-.cabecalho_menu{
+.cabecalho_menu {
     display: flex;
     gap: 24px;
 }
@@ -64,14 +64,14 @@ main {
 
 .main_titulo {
     padding: 16px 13%;
-    font-size: 28px; 
+    font-size: 28px;
 }
 
 .produtos_container {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 2%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
 }
 
 .produto_card {
@@ -87,7 +87,8 @@ main {
     width: 50%;
     height: 180px;
     margin-bottom: 12px;
-    object-fit: cover; /* Evita que a imagem se distorça */
+    object-fit: cover;
+    /* Evita que a imagem se distorça */
 }
 
 .produto_card_titulo {
@@ -108,15 +109,15 @@ main {
 }
 
 .rodape {
-    background-color: var(--cor-fundo-secundario); 
-    color: var(--cor-fonte-principal);      
-    text-align: center;        
-    padding: 24px 0;          
-    margin-top: 48px;       
+    background-color: var(--cor-fundo-secundario);
+    color: var(--cor-fonte-principal);
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 48px;
 }
 
 .rodape_texto {
-    font-size: 16px;           
+    font-size: 16px;
 }
 
 .apresentacao {
@@ -139,7 +140,7 @@ main {
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .descricao_titulo {
@@ -173,8 +174,8 @@ main {
 }
 
 .conteudo-simples {
-    text-align: center; 
-    padding: 150px 0;   
+    text-align: center;
+    padding: 150px 0;
 }
 
 .conteudo-simples__titulo {
@@ -186,15 +187,54 @@ main {
     font-size: 18px;
     color: var(--cor-fonte-principal);
     text-decoration: none;
-    border: 2px solid var(--cor-fonte-principal); 
+    border: 2px solid var(--cor-fonte-principal);
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 .site-container {
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+@media (max-width: 500px) {
+
+    .cabecalho_menu_titulo {
+        font-size: 20px;
+    }
+
+    .main_titulo {
+        text-align: center;
+    }
+
+    .produto_card {
+        width: 75%;
+    }
+
+    .rodape_texto {
+        font-size: 15px;
+    }
+
+    .descricao_imagem_card {
+        width: 100%;       
+    }
+       .apresentacao {
+        display: block;  
+        margin: 0;       
+        padding: 20px;  
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
+    .descricao_imagem {
+        text-align: center;
+    }
+
+    .descricao_titulo {
+        text-align: center;
+    }
+}
 
